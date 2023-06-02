@@ -42,7 +42,7 @@ class BST {
         }
         return a;
     }
-  
+
     int Depth(Node* root) {
         if (!root) {
             return 0;
