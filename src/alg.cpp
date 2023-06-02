@@ -13,13 +13,13 @@ BST<std::string> makeTree(const char* filename) {
         char ch = file.get();
         if (ch >= 65 && ch <= 90) {
             ch += 32;
-            str += ch;
+            strin += ch;
             continue;
         }
         if (ch >= 97 && ch <= 122) {
-            str += ch;
+            strin += ch;
         } else {
-            if (!str.empty()) {
+            if (!strin.empty()) {
                 bst.add(strin);
             }
             strin.clear();
